@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Adjusts the padding */
+
+    font-family: Arial, sans-serif; /* Font style */
+}
+footer a {
+    font-size: 20px;
+    color: black;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.social-icons a {
+    color: black; /* Icon color */
+    text-decoration: none; /* Removes underline from icons */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Size of icons */
+    margin-right: 18px;
+  }
