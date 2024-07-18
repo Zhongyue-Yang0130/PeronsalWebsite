@@ -12,7 +12,7 @@ describe('NavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarComponent, RouterLink],
+      imports: [NavbarComponent],
       providers:[ 
         {provide: Router, useValue: mockRouter},
       ]
