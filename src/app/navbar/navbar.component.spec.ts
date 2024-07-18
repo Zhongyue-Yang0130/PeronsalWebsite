@@ -1,21 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarComponent } from './navbar.component';
-import { Router } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
   let fixture: ComponentFixture<NavbarComponent>;
-  let mockRouter = {
-    navigate: jasmine.createSpy('navigate')
-  };
+ 
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarComponent],
-      providers:[ 
-        {provide: Router, useValue: mockRouter},
-      ]
+      imports: [NavbarComponent,RouterTestingModule],
       
     })
     .compileComponents();
