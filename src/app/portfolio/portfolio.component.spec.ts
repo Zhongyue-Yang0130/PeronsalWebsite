@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PortfolioComponent } from './portfolio.component';
-import { RouterOutlet } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -9,7 +9,7 @@ describe('PortfolioComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PortfolioComponent,RouterOutlet]
+      imports: [PortfolioComponent,RouterTestingModule]
     })
     .compileComponents();
     
