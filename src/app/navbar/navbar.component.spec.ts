@@ -9,8 +9,8 @@ describe('NavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarComponent, RouterLink]
-      provider:[ 
+      imports: [NavbarComponent, RouterLink],
+      providers:[ 
         {provide: Router, useValue: mockRouter},
       ]
       
